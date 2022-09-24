@@ -27,6 +27,7 @@
 
 @media screen and (max-width: 1050px) {
   .line {
-    width: 90%;
+    width: 95%;
+    margin-top: 1rem;
   }
 }
