@@ -20,11 +20,11 @@ const Header = () => {
             <p>Here are some of my Projects I have worked on</p>
           </div>
           <div className={headerStyles.content}>
-            <h3><a href={'https://www.linkedin.com/in/dominick-founds-726a161a4/'} target="_blank" rel="noopener noreferrer">LinkedIn</a> <FontAwesomeIcon icon={faUpRightFromSquare} size='xs'/></h3>
+            <h3><a href={'https://www.linkedin.com/in/dominick-founds-726a161a4/'} target="_blank" rel="noopener noreferrer">LinkedIn <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' className='icon' /></a></h3>
             <p>My LinkedIn profile</p>
           </div>
           <div className={headerStyles.content}>
-            <h3><a href={'https://github.com/DomJF45'} target="_blank">GitHub</a> <FontAwesomeIcon icon={faUpRightFromSquare} size='xs'/></h3>
+            <h3><a href={'https://github.com/DomJF45'} target="_blank">GitHub <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' className='icon'/></a> </h3>
             <p>My GitHub where I store lots of code</p>
           </div>
         </div>

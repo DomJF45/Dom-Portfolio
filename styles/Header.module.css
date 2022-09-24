@@ -63,9 +63,16 @@
 .content h3 {
   margin-top: 3rem;
   margin-bottom: .25rem;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
-.content h3:hover {
+.content h3 a:hover {
   color: rgb(214, 213, 213)
+}
+
+.icon:hover {
+  color:rgb(214, 213, 213)
 }
 
 .content p {
