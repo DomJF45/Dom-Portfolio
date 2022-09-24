@@ -49,14 +49,14 @@
 
 .line {
   height: 1px;
-  width: 1000px;
+  width: 100%;
   background-color: rgb(204, 202, 202);
   display: block;
   margin-top: 3rem;
 }
 
 .contentContainer {
-  width: 1000px;
+  width: 100%;
 
 }
 

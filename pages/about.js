@@ -1,8 +1,11 @@
 import React from 'react'
+import Nav from '../components/Nav'
 
 const about = () => {
   return (
-    <div>about</div>
+    <>
+      <Nav />
+    </>
   )
 }
 

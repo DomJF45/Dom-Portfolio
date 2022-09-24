@@ -1,15 +1,23 @@
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import navStyles from '../styles/Nav.module.css'
 
 const Nav = () => {
   return (
-    <nav className={navStyles.nav}>
-      <ul>
-        <li><Link href={'/'}>Home</Link></li>
-        <li><Link href={'/about'}>About</Link></li>
-        <li><Link href={'/projects'}>Projects</Link></li>
-      </ul>
-    </nav>
+    <div className={navStyles.navContainer}>
+      <nav className={navStyles.nav}>
+        <ul>
+          <div className={navStyles.circleContainer}>
+            <span className={navStyles.circle}></span>
+          </div>
+          <li><Link href={'/'}>DOM</Link></li>
+          <li> / </li>
+          <li><a href={'/projects'}>Projects <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon> </a></li>
+        </ul>
+      </nav>
+    </div>
+    
   )
 }
 
