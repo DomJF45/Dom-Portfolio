@@ -1,0 +1,32 @@
+.footerContainer {
+  margin: 1.5rem 0;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.line {
+  height: 1px;
+  width: 1000px;
+  background-color: rgb(204, 202, 202);
+  display: flex;
+  
+  margin-top: 3rem;
+}
+
+.signature {
+  font-size: .75rem;
+  color: rgb(204, 202, 202);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 1050px) {
+  .line {
+    width: 90%;
+  }
+}
