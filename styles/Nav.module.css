@@ -36,6 +36,9 @@
   margin-right: .5rem;
   margin-top: 3px;
 }
+.item {
+  margin-right: .5rem;
+}
 .circleContainer {
   display: flex;
   align-items: flex-start;
@@ -51,8 +54,75 @@
   transition: all .2s ease-in-out;
 }
 
+.buttonNav {
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  margin-left: -0.3rem;
+  margin-top: -0.05rem;
+}
+
+.iconDown {
+  margin-left: .25rem;
+}
+
+.fadeIn {
+  display: block;
+  background:linear-gradient(#ff9e00, #b5838d);
+  z-index: 1;
+  position: absolute;
+  border-radius: 10px;
+  margin-top: 8px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  opacity: 1;
+  transition: all .2s ease;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  justify-content: end;
+  align-items: end;
+  width: auto;
+}
+.fadeOut {
+  position: absolute;
+  opacity:0;
+  transition: all .2s ease;
+}
+.fadeOut a {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: all .2s ease-out;
+}
+.menuItems:hover {
+  background-color: #fbd39481;
+  border-radius: 10px;
+  width: inherit;
+  padding-right: 100%;
+}
+.menuItems a {
+  margin-right: 100%;
+  padding: .5rem;
+  margin-right: 2.5rem;
+  display: block;
+  justify-content: start;
+  width: 100%;
+ 
+}
+.menuItems a:hover {
+  
+  
+}
+
 @media screen and (max-width: 1100px ) {
-  .nav {
+  /* .nav {
     display: flex;
     color: #fff;
     align-items: center;
@@ -61,5 +131,5 @@
     position: relative;
     padding: 0;
     margin: 0;
-  }
+  } */
 }
