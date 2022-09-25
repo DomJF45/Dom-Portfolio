@@ -1,6 +1,4 @@
 import Nav from './Nav';
-import Footer from './Footer'
-import neaarrdlab from '../public/neaarrdlab.png'
 import projectStyles from '../styles/Projects.module.css'
 
 const Projects = () => {
@@ -14,7 +12,7 @@ const Projects = () => {
             <div className={projectStyles.title}>Projects</div>
             <div className={projectStyles.contentDescription}>I build lots of projects related to cognitive tasks for use in psychological experiments</div>
           </div>
-          
+
           <div className={projectStyles.contentContainer}>
             
             <div className={projectStyles.card}>
@@ -23,7 +21,7 @@ const Projects = () => {
                 <img src="/neaarrdlab.png" style={{width: '100%'}} className={projectStyles.cardImg}/>
                 <div className={projectStyles.container}>
                   <h4 className={projectStyles.cardTitle}>NEAARRD Lab</h4>
-                  <p className={projectStyles.cardBio}>Portal for the NEAARRD Lab</p>
+                  <p className={projectStyles.cardBio}>Portal for the NEAARRD Lab that contains information about our research</p>
                 </div>
               </a>
               
