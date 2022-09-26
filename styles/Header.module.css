@@ -1,5 +1,5 @@
 .title {
-  
+  font-weight: 400;
 }
 
 .headerContainer {
@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .headerContainer h1 {
@@ -66,6 +65,7 @@
   padding: 0;
   margin-left: 0;
   margin-right: 0;
+  font-weight: 400;
 }
 .content h3 a:hover {
   color: rgb(214, 213, 213)
