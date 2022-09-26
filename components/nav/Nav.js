@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import navStyles from '../styles/Nav.module.css'
-import { menuItems } from '../menuItems'
+import navStyles from '../../styles/Nav.module.css'
+import { menuItems } from '../../data/menuItems'
 import MenuItems from './MenuItems'
 
 const Nav = () => {

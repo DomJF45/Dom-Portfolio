@@ -3,7 +3,7 @@ import { useState } from "react"
 import Dropdown from './Dropdown'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
-import navStyles from '../styles/Nav.module.css'
+import navStyles from '../../styles/Nav.module.css'
 
 const MenuItems = ({ items }) => {
 

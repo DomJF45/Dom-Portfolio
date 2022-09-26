@@ -1,5 +1,5 @@
 import React from 'react'
-import navStyles from '../styles/Nav.module.css'
+import navStyles from '../../styles/Nav.module.css'
 
 const Dropdown = ({ submenus, activated }) => {
   return (
