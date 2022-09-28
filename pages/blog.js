@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import path from 'path'
 import Post from '../components/blog/Post'
 import Nav from '../components/nav/Nav'
+import Footer from '../components/Footer'
 import blogStyles from '../styles/Blog.module.css'
 
 const blog = ({posts}) => {
@@ -15,6 +16,7 @@ const blog = ({posts}) => {
           <Post key={index}post={post} />
         ))}
       </div>
+      <Footer />
     </>
   )
 }

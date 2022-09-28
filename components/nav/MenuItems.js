@@ -1,13 +1,13 @@
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import Dropdown from './Dropdown'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import navStyles from '../../styles/Nav.module.css'
 
-const MenuItems = ({ items }) => {
+const MenuItems = ({ items, callback }) => {
 
-  const [dropdown, setDropdown] = useState(false);
+  const [dropdown, setDropdown] = useState(false); 
 
   return (
     <div className={navStyles.item}>

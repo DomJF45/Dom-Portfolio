@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Footer from '../Footer'
 import blogStyles from '../../styles/Blog.module.css'
 
 

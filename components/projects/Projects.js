@@ -1,5 +1,5 @@
 import Nav from '../nav/Nav';
-import {projectItems} from '../../projectItems'
+import {projectItems} from '../../data/projectItems'
 import ProjectItems from './ProjectItems';
 import projectStyles from '../../styles/Projects.module.css'
 
