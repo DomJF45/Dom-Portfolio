@@ -8,6 +8,7 @@ const ProjectItems = ({projects}) => {
       <img src={projects.pic} style={{width: '100%'}} className={projectStyles.cardImg}/>
       <div className={projectStyles.container}>
         <h4 className={projectStyles.cardTitle}>{projects.title}</h4>
+        
         <p className={projectStyles.cardBio}>{projects.bio}</p>
       </div>
     </a>

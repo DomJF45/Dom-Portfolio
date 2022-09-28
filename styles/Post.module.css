@@ -1,0 +1,30 @@
+.content {
+  margin-top: 3rem;
+  margin-bottom: .25rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.content h3 {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 400;
+}
+.content h3 a:hover {
+  color: rgb(214, 213, 213)
+}
+
+.icon:hover {
+  color:rgb(214, 213, 213)
+}
+
+.content p {
+  margin: 0;
+}
+
+.date {
+  font-size: 15px;
+}

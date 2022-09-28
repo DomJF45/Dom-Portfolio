@@ -16,8 +16,8 @@ export const menuItems = [
         url: '/projects'
       },
       {
-        title: 'notes',
-        url: '/notes'
+        title: 'blog',
+        url: '/blog'
       }
     ]
   }
