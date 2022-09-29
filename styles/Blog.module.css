@@ -9,6 +9,10 @@
   
 }
 
+.flavorText {
+  color: rgba(255,255,255,0.7);
+}
+
 .title {
   font-size: 30px;
   font-weight: 400;

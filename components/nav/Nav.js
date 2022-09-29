@@ -5,7 +5,9 @@ import navStyles from '../../styles/Nav.module.css'
 import { menuItems } from '../../data/menuItems'
 import MenuItems from './MenuItems'
 
-const Nav = () => {
+
+
+const Nav = ({currentDirectory}) => {
   return (
     <div className={navStyles.navContainer}>
       <div className={navStyles.nav}>
@@ -16,7 +18,7 @@ const Nav = () => {
           <div className={navStyles.list}>
           {menuItems.map((menu, index) => {
             return (
-              <MenuItems items={menu} key={index} />
+              <MenuItems items={menu} key={index} currentDirectory={currentDirectory}/>
             )
           })}
           

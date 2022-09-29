@@ -15,20 +15,16 @@
 .navStuff {
   display: flex;
 }
-/*
-.nav ul {
-  list-style: none;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 780px;
-
+.iconUp {
+  transform: rotate(180deg);
+  transition: transform .2s linear;
+  margin-left: .25rem;
 }
-
-.nav ul li {
-  margin-right: 8px;
-  
-} */
+.iconDown {
+  transform: rotate(0deg);
+  transition: transform .2s linear;
+  margin-left: .25rem;
+}
 .list {
   display: flex;
   justify-content: flex-start;
@@ -66,10 +62,6 @@
   display: flex;
   margin-left: -0.3rem;
   margin-top: -0.05rem;
-}
-
-.iconDown {
-  margin-left: .25rem;
 }
 
 .fadeIn {

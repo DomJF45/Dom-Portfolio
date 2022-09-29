@@ -10,7 +10,7 @@ import postStyles from '../../styles/Post.module.css'
 export default function PostPage({frontmatter: {title, date, cover_image}, slug, content}) {
   return (
     <>
-      <Nav />
+      <Nav currentDirectory={'Blog'} />
       <div className={postStyles.content}>
         <p className={postStyles.date}>{date}</p>
         <h3 className={postStyles.title}>{title}</h3>

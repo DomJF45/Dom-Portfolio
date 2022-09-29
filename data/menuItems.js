@@ -13,11 +13,13 @@ export const menuItems = [
     submenu: [
       {
         title: 'projects',
-        url: '/projects'
+        url: '/projects',
+        
       },
       {
         title: 'blog',
-        url: '/blog'
+        url: '/blog',
+        
       }
     ]
   }

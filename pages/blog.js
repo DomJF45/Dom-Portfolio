@@ -8,9 +8,13 @@ import Footer from '../components/Footer'
 import blogStyles from '../styles/Blog.module.css'
 
 const blog = ({posts}) => {
+
+  const currentDirectory = 'Blog'
+
   return (
     <>
-      <Nav />
+      <Nav currentDirectory={currentDirectory}/>
+      <p className={blogStyles.flavorText}>Notes on my web development journey.</p>
       <div className={blogStyles.contentContainer}>
         {posts.map((post, index) => (
           <Post key={index}post={post} />

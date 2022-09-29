@@ -5,18 +5,34 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import navStyles from '../../styles/Nav.module.css'
 
-const MenuItems = ({ items, callback }) => {
+const MenuItems = ({ items, currentDirectory }) => {
 
   const [dropdown, setDropdown] = useState(false); 
+  const menu = useRef(true)
+  
+  useEffect(() => {
+    document.addEventListener('mousedown', closeOnClick)
+  },[dropdown])
+
+  const closeMenu = () => {
+    setDropdown((prev)=>(!prev))
+  }
+  
+  const closeOnClick = (e) => {
+    if (menu.current && dropdown && !menu.current.contains(e.target)) {
+      setDropdown(false)
+    }
+  }
 
   return (
-    <div className={navStyles.item}>
+    <div className={navStyles.item} ref={menu}>
+      
       {items.submenu ? (
         <>
-          <button className={navStyles.buttonNav} type="button" aria-haspopup="menu" aria-expanded={dropdown ? "true" : "false"} onClick={() => setDropdown((prev) => !prev)}>
-            {items.title}{' '} 
+          <button className={navStyles.buttonNav} type="button" aria-haspopup="menu" aria-expanded={dropdown ? "true" : "false"} onClick={closeMenu}>
+            {currentDirectory}{' '} 
             <div className={navStyles.iconDown}>
-              <FontAwesomeIcon icon={faChevronDown} size={'xs'}></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faChevronDown} size={'xs'} className={dropdown ? navStyles.iconUp : navStyles.iconDown}></FontAwesomeIcon>
             </div>
           </button>
           <Dropdown submenus={items.submenu} activated={dropdown} />
