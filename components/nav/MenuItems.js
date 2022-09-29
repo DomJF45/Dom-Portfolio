@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react"
 import Dropdown from './Dropdown'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
+
 import navStyles from '../../styles/Nav.module.css'
 
 const MenuItems = ({ items, currentDirectory }) => {
@@ -11,7 +12,11 @@ const MenuItems = ({ items, currentDirectory }) => {
   const menu = useRef(true)
   
   useEffect(() => {
-    document.addEventListener('mousedown', closeOnClick)
+    if (dropdown === true) {
+      document.addEventListener('mousedown', closeOnClick)
+      console.log('mouse down is listening')
+    } 
+    
   },[dropdown])
 
   const closeMenu = () => {
@@ -21,6 +26,8 @@ const MenuItems = ({ items, currentDirectory }) => {
   const closeOnClick = (e) => {
     if (menu.current && dropdown && !menu.current.contains(e.target)) {
       setDropdown(false)
+      console.log('mousedown')
+      document.removeEventListener('mousedown', closeOnClick)
     }
   }
 

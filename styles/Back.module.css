@@ -1,0 +1,13 @@
+.backContainer {
+  margin-top: 3rem;
+  margin-bottom: -1rem;
+}
+
+.link {
+  margin-top: 1rem;
+  cursor: pointer;
+  
+}
+.link:hover {
+  color: rgba(255, 255, 255, 0.646);
+}

@@ -5,6 +5,7 @@ import path from 'path'
 import Post from '../components/blog/Post'
 import Nav from '../components/nav/Nav'
 import Footer from '../components/Footer'
+import GoBack from '../components/GoBack'
 import blogStyles from '../styles/Blog.module.css'
 
 const blog = ({posts}) => {
@@ -20,6 +21,7 @@ const blog = ({posts}) => {
           <Post key={index}post={post} />
         ))}
       </div>
+      <GoBack prevDirectory={''} />
       <Footer />
     </>
   )

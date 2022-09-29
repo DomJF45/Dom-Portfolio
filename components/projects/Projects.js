@@ -1,5 +1,7 @@
 import Nav from '../nav/Nav';
+import Link from 'next/link';
 import {projectItems} from '../../data/projectItems'
+import GoBack from '../GoBack';
 import ProjectItems from './ProjectItems';
 import projectStyles from '../../styles/Projects.module.css'
 
@@ -31,6 +33,7 @@ const Projects = () => {
           
         </div>
       </div>
+      <GoBack prevDirectory={''} />
     </>
   )
 }

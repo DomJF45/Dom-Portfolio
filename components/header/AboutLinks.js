@@ -10,8 +10,8 @@ const AboutLinks = ({ items }) => {
           <h3>
             <a href={items.link} target="_blank">
               {items.title}
+            <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' className={headerStyles.icon} />
             </a>
-            <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' className='icon' />
           </h3>
           <p>{items.bio}</p>
         </>

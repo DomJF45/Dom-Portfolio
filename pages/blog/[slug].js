@@ -5,6 +5,7 @@ import {marked} from 'marked'
 import Link from 'next/link'
 import Nav from '../../components/nav/Nav'
 import Footer from '../../components/Footer'
+import GoBack from '../../components/GoBack'
 import postStyles from '../../styles/Post.module.css'
 
 export default function PostPage({frontmatter: {title, date, cover_image}, slug, content}) {
@@ -18,6 +19,7 @@ export default function PostPage({frontmatter: {title, date, cover_image}, slug,
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
+      <GoBack prevDirectory={'blog'} />
       <Footer />
     </>
   )

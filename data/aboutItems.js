@@ -4,7 +4,13 @@ export const aboutItems = [
     link: "/projects",
     bio: "Contains a couple of the projects I have worked on",
     external: false
-  }, 
+  },
+  {
+    title: "Blog",
+    link: "/blog",
+    bio: "Contains notes and updates on my software development journey",
+    external: false
+  },
   {
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/dominick-founds-726a161a4/",

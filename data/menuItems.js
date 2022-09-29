@@ -12,12 +12,16 @@ export const menuItems = [
     url: '/projects',
     submenu: [
       {
-        title: 'projects',
+        title: 'Home',
+        url: '/'
+      },
+      {
+        title: 'Projects',
         url: '/projects',
         
       },
       {
-        title: 'blog',
+        title: 'Blog',
         url: '/blog',
         
       }
