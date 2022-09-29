@@ -8,7 +8,7 @@ const AboutLinks = ({ items }) => {
       {items.external ? (
         <>
           <h3>
-            <a href={items.link} target="_blank">
+            <a href={items.link} target="_blank" rel="noreferrer">
               {items.title}
             <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' className={headerStyles.icon} />
             </a>

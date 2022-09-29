@@ -50,6 +50,11 @@
   transition: all .2s ease-in-out;
 }
 
+.dParent {
+  width: 100%;
+  height: 100%;
+}
+
 .buttonNav {
   background: none;
   border: none;
@@ -67,7 +72,6 @@
 .fadeIn {
   display: block;
   background:linear-gradient(#ff9e00, #b5838d);
-  z-index: 1;
   position: absolute;
   border-radius: 10px;
   margin-top: 8px;
@@ -75,12 +79,13 @@
   padding-right: .5rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
+  margin-right: .5rem;
   opacity: 1;
   transition: all .2s ease;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  justify-content: end;
-  align-items: end;
-  width: auto;
+  width: 12%;
+  
+  
 }
 .fadeOut {
   position: absolute;
@@ -96,8 +101,8 @@
 .menuItems:hover {
   background-color: #fbd39481;
   border-radius: 10px;
-  width: inherit;
-  padding-right: 100%;
+  
+  
   cursor: pointer;
 }
 .menuItems a {
@@ -125,4 +130,7 @@
     padding: 0;
     margin: 0;
   } */
+  .fadeIn {
+    width: 30%;
+  }
 }

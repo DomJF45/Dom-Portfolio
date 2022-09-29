@@ -35,7 +35,7 @@ const MenuItems = ({ items, currentDirectory }) => {
     <div className={navStyles.item} ref={menu}>
       
       {items.submenu ? (
-        <>
+        <div className={navStyles.dParent}>
           <button className={navStyles.buttonNav} type="button" aria-haspopup="menu" aria-expanded={dropdown ? "true" : "false"} onClick={closeMenu}>
             {currentDirectory}{' '} 
             <div className={navStyles.iconDown}>
@@ -43,7 +43,7 @@ const MenuItems = ({ items, currentDirectory }) => {
             </div>
           </button>
           <Dropdown submenus={items.submenu} activated={dropdown} />
-        </>
+        </div>
       ) : (
         <Link href={items.url}>{items.title}</Link>
       )}

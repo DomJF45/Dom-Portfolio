@@ -6,8 +6,8 @@ const Dropdown = ({ submenus, activated }) => {
   return (
     <div className={activated ? navStyles.fadeIn : navStyles.fadeOut}>
       {submenus.map((submenu, index) => (
-        <Link href={submenu.url}>
-          <div key={index} className={navStyles.menuItems}>
+        <Link href={submenu.url} key={index}>
+          <div className={navStyles.menuItems}>
             <a>
               <div>
                 {submenu.title}
