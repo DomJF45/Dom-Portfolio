@@ -81,31 +81,50 @@
   padding-bottom: .5rem;
   margin-right: .5rem;
   opacity: 1;
-  transition: all .2s ease;
+  transition: all .3s ease;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   width: 130px;
   
   
 }
 .fadeOut {
+  display: block;
+  background:linear-gradient(#ff9e00, #b5838d);
   position: absolute;
-  opacity:0;
+  border-radius: 10px;
+  margin-top: 8px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-right: .5rem;
+  opacity: 0;
   transition: all .2s ease;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 130px;
+  visibility: hidden;
 }
 .fadeOut a {
-  display: none;
-  position: absolute;
-  opacity: 0;
-  transition: all .2s ease-out;
+  
 }
-.menuItems:hover {
+.fadeOut .menuItems a{
+  margin-right: 100%;
+  padding: .5rem;
+  margin-right: 2.5rem;
+  display: block;
+  justify-content: start;
+  width: 100%;
+  opacity: 0;
+  transition: all .2s ease;
+  visibility: hidden;
+}
+
+.fadeIn .menuItems:hover {
   background-color: #fbd39481;
   border-radius: 10px;
-  
-  
   cursor: pointer;
 }
-.menuItems a {
+.fadeIn .menuItems a {
   margin-right: 100%;
   padding: .5rem;
   margin-right: 2.5rem;
@@ -114,10 +133,7 @@
   width: 100%;
  
 }
-.menuItems a:hover {
-  
-  
-}
+
 
 @media screen and (max-width: 1100px ) {
   /* .nav {
