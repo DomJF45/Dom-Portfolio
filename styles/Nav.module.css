@@ -83,7 +83,7 @@
   opacity: 1;
   transition: all .2s ease;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 12%;
+  width: 130px;
   
   
 }
@@ -131,6 +131,6 @@
     margin: 0;
   } */
   .fadeIn {
-    width: 30%;
+    width: 130px;
   }
 }
