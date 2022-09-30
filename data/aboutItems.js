@@ -22,5 +22,11 @@ export const aboutItems = [
     link: "https://github.com/DomJF45",
     bio: "My GitHub where I store my code. Here you can find practice, as well as code for some of my projects.",
     external: true
+  },
+  {
+    title: "Get in Touch",
+    link: "mailto:webdevbydom@gmail.com",
+    bio: "Here you can contact me by sending an email via the link",
+    external: true
   }
 ]
