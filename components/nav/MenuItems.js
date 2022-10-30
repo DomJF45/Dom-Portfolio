@@ -14,7 +14,6 @@ const MenuItems = ({ items, currentDirectory }) => {
   useEffect(() => {
     if (dropdown === true) {
       document.addEventListener('mousedown', closeOnClick)
-      console.log('mouse down is listening')
     } 
     
   },[dropdown])
@@ -26,7 +25,6 @@ const MenuItems = ({ items, currentDirectory }) => {
   const closeOnClick = (e) => {
     if (menu.current && dropdown && !menu.current.contains(e.target)) {
       setDropdown(false)
-      console.log('mousedown')
       document.removeEventListener('mousedown', closeOnClick)
     }
   }
