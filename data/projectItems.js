@@ -1,5 +1,11 @@
 export const projectItems = [
   {
+    title: 'LabRats',
+    bio: 'Task management system for Research Laboratories.',
+    pic: '/labrats.png',
+    link: 'https://labrats.herokuapp.com/',
+  },
+  {
     title: 'NEAARRD Lab',
     bio: 'Portal for the NEAARRD Lab that contains information about our research.',
     pic: '/neaarrdlab.png',
